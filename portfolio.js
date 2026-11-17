@@ -86,7 +86,7 @@ if (item.category === "social") {
         twitter: "https://cdn.simpleicons.org/x",
         x: "https://cdn.simpleicons.org/x",
         whatsapp: "https://cdn.simpleicons.org/whatsapp",
-        linkedin: "https://cdn.simpleicons.org/linkedIn/0A66C2",
+        linkedin: "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/linkedin.svg",
         github: "https://cdn.simpleicons.org/github"
     };
 
