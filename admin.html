@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hammad | Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">HAMMAD<span>.DEV</span></div>
+    <a href="index.html">← Portfolio</a>
+</header>
+
+<main class="dashboard">
+
+    <!-- LOGIN -->
+    <div id="loginSection" class="login-card">
+        <h1>Private Panel</h1>
+        <p>Sign in to manage your portfolio.</p>
+
+        <form id="loginForm" autoComplete="off">
+            <input type="email" id="email" placeholder="Email" autocomplete="off" required>
+            <input type="password" id="password" placeholder="Password" autocomplete=" new-password" required>
+            <button type="submit">Sign In</button>
+        </form>
+
+        <p style="color:#ff7777">🔒 Only Hammad can access</p>
+        <p id="message"></p>
+    </div>
+
+    <!-- ADMIN DASHBOARD -->
+    <div id="adminDashboard" hidden>
+
+        <h1>Admin Dashboard</h1>
+        <p>Welcome, Hammad! Manage your portfolio.</p>
+
+        <div class="admin-layout">
+
+            <!-- SIDEBAR -->
+            <aside class="admin-sidebar">
+
+                <button data-category="overview">Overview</button>
+                <button data-category="about">about</button>
+                <button data-category="skill">Skills</button>
+                <button data-category="project">Projects</button>
+                <button data-category="experience">Experience</button>
+                <button data-category="education">Education</button>
+                <button data-category="certificate">Certificates</button>
+                <button data-category="achievement">Achievements</button>
+                <button data-category="social">Social Links</button>
+                <button data-category="contact">Contact</button>
+                <a href="messages.html">
+    📩 Messages
+    <span id="messageBadge" class="message-badge">0</span>
+</a>
+                <button id="logoutButton">Sign Out</button>
+
+            </aside>
+
+            <!-- MAIN CONTENT -->
+            <div class="admin-content">
+
+                <section id="overviewSection">
+                    <h2>Portfolio Overview</h2>
+                    <div id="statistics" class="statistics"></div>
+                </section>
+
+                <section id="managerSection" hidden>
+
+                    <h2 id="managerTitle">Manage Content</h2>
+
+                    <form id="contentForm">
+
+                        <input type="hidden" id="itemId">
+
+                        <input type="text" id="title"
+                            placeholder="Title / Name" required>
+
+                        <input type="text" id="subtitle"
+                            placeholder="Subtitle / Role / Institution">
+
+                        <textarea id="description"
+                            placeholder="Description"></textarea>
+
+                        <input type="text" id="dateText"
+                            placeholder="Date / Duration">
+
+                        <input type="url" id="linkUrl"
+                            placeholder="Website / GitHub / Credential URL">
+
+                        <label>Upload image or PDF</label>
+                        <input type="file" id="fileInput"
+                            accept="image/*,.pdf">
+
+                        <label class="publish-option">
+                            <input type="checkbox" id="published" checked>
+                            Publish on website
+                        </label>
+
+                        <button type="submit">Save Information</button>
+
+                        <button type="button" id="cancelEdit">
+                            Clear Form
+                        </button>
+
+                    </form>
+
+                    <h2>Saved Information</h2>
+
+                    <div id="contentList"></div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>
+<script type="module" src="messages-badge.js"></script>
