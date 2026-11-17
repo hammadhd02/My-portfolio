@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mohammad Hammad | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+content="Mohammad Hammad's portfolio — AI, Machine Learning, Python and Data Analytics projects, skills and experience.">
+
+<meta name="author" content="Mohammad Hammad">
+
+<meta name="keywords"
+content="Mohammad Hammad, AI, Machine Learning, Python, Data Analytics, Portfolio">
+
+<meta property="og:title" content="Mohammad Hammad | HAMMAD.DEV">
+
+<meta property="og:description"
+content="Explore my journey in Artificial Intelligence, Machine Learning and Data Analytics.">
+
+<meta property="og:type" content="website">
+
+<meta name="theme-color" content="#020b12">
+<link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">HAMMAD<span>.DEV</span></div>
+<button id="menuToggle" class="menu-toggle">☰</button>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="panelButton">🔒 Private Panel</button>
+    </header>
+
+    
+
+    <!-- Main Homepage -->
+    <!-- Main Homepage -->
+<main id="home">
+
+    <section class="hero">
+
+        <!-- LEFT SIDE: Introduction -->
+        <div class="hero-text">
+
+            <p class="availability">
+                ● Available for Opportunities
+            </p>
+
+            <h1>
+                Hi, I'm<br>
+                Mohammad <span>Hammad</span>
+            </h1>
+
+            <h2>AI & Data Enthusiast</h2>
+
+            <p>
+                A passionate learner and builder in AI,
+                Machine Learning and Data Analytics,
+                focused on solving real-world problems.
+            </p>
+
+            <a href="#contact" class="primary-btn">
+                Contact Me <span>↗</span>
+            </a>
+
+        </div>
+
+
+        <!-- RIGHT SIDE: Animated Bitmoji -->
+        <div class="hero-visual">
+
+            <div class="avatar-orbit"></div>
+
+            <div class="avatar-glow"></div>
+
+            <div class="avatar-container">
+
+                <div class="hello-bubble">
+                    Hey! I'm Hammad 👋 welcome to my portfolio!!!
+                </div>
+
+                <img
+                    src="images/avatar.jpg"
+                    alt="Mohammad Hammad"
+                    class="profile-avatar"
+                >
+
+                <div class="avatar-badge">
+                    ✦ AI AND DATA ENTHUSIAST
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Professional Connections -->
+    <section class="connection-section">
+
+        <h3 class="connection-heading">LET'S CONNECT</h3>
+
+        <div class="featured-links">
+
+            <!-- GitHub -->
+            <a href="https://github.com/YOUR_USERNAME"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="featured-link">
+
+                <img src="https://cdn.simpleicons.org/github/FFFFFF"
+                     alt="GitHub">
+
+                <span>
+                    <strong>GitHub</strong>
+                    <small>Explore my projects</small>
+                </span>
+
+                <span class="link-arrow">↗</span>
+            </a>
+
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/YOUR_USERNAME"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="featured-link">
+
+                <img src="https://cdn.simpleicons.org/linkedin/0A66C2"
+                     alt="LinkedIn">
+
+                <span>
+                    <strong>LinkedIn</strong>
+                    <small>Professional network</small>
+                </span>
+
+                <span class="link-arrow">↗</span>
+            </a>
+
+
+            <!-- LeetCode -->
+            <a href="https://leetcode.com/u/YOUR_USERNAME/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="featured-link">
+
+                <img src="https://cdn.simpleicons.org/leetcode/FFA116"
+                     alt="LeetCode">
+
+                <span>
+                    <strong>LeetCode</strong>
+                    <small>Problem solving</small>
+                </span>
+
+                <span class="link-arrow">↗</span>
+            </a>
+
+
+            <!-- Email -->
+            <a href="mailto:YOUR_EMAIL@gmail.com"
+               class="featured-link">
+
+                <span class="email-icon">✉</span>
+
+                <span>
+                    <strong>Email Me</strong>
+                    <small>Let's get in touch</small>
+                </span>
+
+                <span class="link-arrow">↗</span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Social Media -->
+    <section class="social-section">
+
+        <h3 class="connection-heading">SOCIAL LINKS</h3>
+
+        <p class="social-description">
+            Follow me and stay connected.
+        </p>
+
+        <div id="socialLinks" class="social-links"></div>
+
+    </section>
+
+</main>
+        <!-- Private Panel -->
+        <section class="private-panel" id="privatePanel">
+
+            <h2>🔐 Private Panel</h2>
+
+            <p>Manage your portfolio content securely.</p>
+
+            <form id="loginForm">
+
+                <input type="email" placeholder="Enter Email" required>
+
+                <input type="password" placeholder="Enter Password" required>
+
+                <button type="submit">Sign In</button>
+
+            </form>
+
+            <p class="security-note">
+                🔒 Only Hammad can access this panel.
+            </p>
+
+        </section>
+        <!-- About Section -->
+<!-- About -->
+<section id="about">
+    <h2>About Me</h2>
+    <div id="publicAbout" class="about-list"></div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2>My Skills</h2>
+    <div id="publicSkills" class="skill-list"></div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2>My Projects</h2>
+    <div id="publicProjects" class="public-projects"></div>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+    <h2>Experience</h2>
+    <div id="publicExperience"></div>
+</section>
+
+<!-- Education -->
+<section id="education">
+    <h2>Education</h2>
+    <div id="publicEducation"></div>
+</section>
+
+<!-- Certificates -->
+<section id="certificates">
+    <h2>Certificates</h2>
+    <div id="publicCertificates"></div>
+</section>
+
+<!-- Achievements -->
+<section id="achievements">
+    <h2>Achievements</h2>
+    <div id="publicAchievements"></div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div id="publicContact"></div>
+</section>
+<form id="contactForm" class="contact-form">
+
+    <input
+        type="text"
+        id="contactName"
+        placeholder="Your Name"
+        maxlength="100"
+        required
+    >
+
+    <input
+        type="email"
+        id="contactEmail"
+        placeholder="Your Email"
+        maxlength="254"
+        required
+    >
+
+    <input
+        type="text"
+        id="contactSubject"
+        placeholder="Subject"
+        maxlength="200"
+        required
+    >
+
+    <textarea
+        id="contactMessage"
+        placeholder="Write your message..."
+        maxlength="5000"
+        required
+    ></textarea>
+
+    <button type="submit" id="sendMessage">
+        Send Message
+    </button>
+
+    <p id="contactStatus"></p>
+
+</form>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script type="module" src="portfolio.js"></script>
+<footer class="site-footer">
+
+    <h2>HAMMAD<span>.DEV</span></h2>
+
+    <p>Building my journey in AI, Machine Learning and Technology.</p>
+
+    <p>© 2026 Mohammad Hammad. All rights reserved.</p>
+
+    <a href="#home">Back to Top ↑</a>
+
+</footer>
+</body>
+</html>
